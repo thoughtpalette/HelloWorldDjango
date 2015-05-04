@@ -2,7 +2,18 @@
 {% block title %}This is the homepage - {{ block.super }}{% endblock %}
 
 {% block content %}
-<h1>Hi! This is ze index</h1>
+<h1>Hi! This is ze index {{ number }}</h1>
 
 <p>Yolo Swaggins and the fellowship of the bling</p>
+<p>{% if number %} Number Exists! {% endif %}</p>
+
+<p>there are 6 dogs</p>
+<p>
+    {% if number == 6 %}
+    True!
+    {% else %}
+    False!
+    {% endif %}
+</p>
+
 {% endblock %}
